@@ -1,5 +1,5 @@
-install  the pakage by using npm init  in frontend 
-and npm init in backend folder 
+install  the pakage by using npm install  in frontend 
+and npm install in backend folder 
  to run the code use  use npm start
   firstly start Server
 
