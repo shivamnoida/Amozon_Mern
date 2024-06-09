@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+require('dotenv').config();
 const bcrypt = require("bcryptjs");
 const Products = require("./Products");
 const Users = require("./Users");
@@ -17,8 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // connection url
-const connection_url =
-  "mongodb+srv://root:shiv1234@cluster0.prfguxz.mongodb.net/My_Amozon?retryWrites=true&w=majority&appName=Cluster0";
+const connection_url = process.env.MONGO_URL; // Correctly assign the URI string
 
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
