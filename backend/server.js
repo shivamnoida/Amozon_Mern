@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cors());
 
 // connection url
-const connection_url = process.env.MONGO_URL; // Correctly assign the URI string
+const connection_url = process.env.MONGO_URL; 
 
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
